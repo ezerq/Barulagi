@@ -1,0 +1,193 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_booking_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Alamat Restoran -->
+        <TextView
+            android:id="@+id/alamatRestoran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat Restoran"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/alamatRestoranDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jl. Jurang tiga kecamatan kacung"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tanggal Booking -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Booking"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/tanggalBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="01 Juni 2024"
+                android:focusable="false"
+                android:clickable="true"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <!-- Waktu Booking -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Waktu Booking"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/waktuBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="13:00"
+                android:focusable="false"
+                android:clickable="true"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <!-- Jumlah Orang -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jumlah orang"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/jumlahOrang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="5 Person"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <!-- Section Separator -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Section 1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray"
+            android:padding="8dp"
+            android:textColor="@android:color/white" />
+
+        <!-- Ringkasan Pesanan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ringkasan Pesanan"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/totalMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Menu\t\t\t\t\t\t\t\tRp 100.000.000"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/diskon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diskon\t\t\t\t\t\t\t\t\t\t\t\t\t\tRp 0"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/pax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pax\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRp 1.000.000"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/biayaPelayanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biaya Pelayanan\t\t\t\t\t\t\t\tRp 50.000"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/totalPesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Pesanan\t\t\t\t\t\t\t\t\t\t\tRp 2.000.000.000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Total Harga dan Tombol Checkout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/totalHargaTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rp 2.000.000.000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/buttonMulaiPesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mulai Pesan"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation Apps"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in account"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:hint="email@domain.com"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/title"
+        android:layout_marginTop="100dp"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/email"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="16dp"
+        android:background="#000"
+        android:text="Sign up with email"
+        android:textColor="#FFF"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/google_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up"
+        android:layout_marginTop="20dp"
+        android:background="#FFF"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_google"
+        android:text="GOOGLE SIGN IN" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_reservation_list">
+
+    <!-- Search Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search"
+            android:padding="8dp"
+            android:background="@drawable/search_background" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notification"
+            android:background="@android:color/transparent"
+            android:contentDescription="Notification" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar Reservasi"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <!-- RecyclerView for Reservations -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewReservations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+</LinearLayout>
